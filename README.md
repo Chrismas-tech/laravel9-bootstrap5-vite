@@ -10,7 +10,6 @@
 - copy .env.example .env
 - php artisan key:generate
 - php artisan migrate --force
-- php artisan serve -d
 - npm install && npm run dev
 
 ### 3. Start your local server : 
