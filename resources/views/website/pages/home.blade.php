@@ -1,4 +1,7 @@
 @extends('website.layouts.base-website')
+@section('title')
+    Home
+@endsection
 @section('content')
     <div class="container-fluid fixed-top p-4">
 
