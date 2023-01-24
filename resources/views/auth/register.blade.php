@@ -1,4 +1,4 @@
-@extends('layouts.guest')
+@extends('auth.layouts.base-guest')
 @section('title')
     Register
 @endsection
@@ -70,8 +70,9 @@
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="form-check-input" id="terms" name="terms">
                                         <label class="custom-control-label" for="terms">
-                                            I agree to the <a target="_blank" href="{{ route('terms.show') }}">Terms of
-                                                Service</a> and <a target="_blank" href="{{ route('policy.show') }}">Privacy
+                                            I agree to the <a target="_blank" href="{{ route('terms-of-service') }}">Terms of
+                                                Service</a> and <a target="_blank"
+                                                href="{{ route('privacy-policy') }}">Privacy
                                                 Policy</a>
                                         </label>
                                     </div>
@@ -80,7 +81,7 @@
 
                             <div class="mb-0">
                                 <div class="d-flex justify-content-end align-items-baseline">
-                                    <a class="text-muted me-3 text-decoration-none" href="href="{{ route('login') }}">
+                                    <a class="text-muted me-3 text-decoration-none" href="{{ route('login') }}">
                                         Already registered?
                                     </a>
 

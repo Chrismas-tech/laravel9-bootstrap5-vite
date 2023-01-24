@@ -13,7 +13,7 @@
         <!-- Scripts -->
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     </head>
-    <body class="bg-light d-flex justify-content-center align-items-center">
+    <body class="bg-light d-flex justify-content-center align-items-center" style="height:100vh;">
         @yield('content')
     </body>
 </html>

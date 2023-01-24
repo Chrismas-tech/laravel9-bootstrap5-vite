@@ -1,49 +1,27 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }} | Home</title>
-
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
-
-    <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-    <style>
-        body {
-            font-family: 'Nunito';
-            background: #f7fafc;
-        }
-    </style>
-</head>
-
-<body>
+@extends('website.layouts.base-website')
+@section('content')
     <div class="container-fluid fixed-top p-4">
+
         <div class="col-12">
             <div class="d-flex justify-content-end">
                 @if (Route::has('login'))
-                    <div class="">
+                    <div>
                         @auth
-                            <a href="{{ url('/dashboard') }}" class="text-muted">Dashboard</a>
+                            <a href="{{ route('admin.dashboard') }}" class="text-muted">Dashboard</a>
                         @else
                             <a href="{{ route('login') }}" class="text-muted">Log in</a>
 
                             @if (Route::has('register'))
                                 <a href="{{ route('register') }}" class="ms-4 text-muted">Register</a>
                             @endif
-                    @endif
-                </div>
+                        @endauth
+                    </div>
                 @endif
             </div>
         </div>
-        </div>
 
-        <div class="container-fluid my-5 pt-5 px-5">
-            <div class="row justify-content-center px-4">
+        <div class="container-fluid py-5 px-5">
+            <div class="row justify-content-center">
                 <div class="col-md-12 col-lg-9">
                     <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="my-4"
                         style="width: 271px">
@@ -159,15 +137,13 @@
                                                     href="https://envoyer.io" class="text-muted">Envoyer</a> help you take
                                                 your projects to the next level. Pair them with powerful open source
                                                 libraries like <a href="https://laravel.com/docs/billing"
-                                                    class="text-muted">Cashier</a>, <a
-                                                    href="https://laravel.com/docs/dusk" class="text-muted">Dusk</a>, <a
+                                                    class="text-muted">Cashier</a>, <a href="https://laravel.com/docs/dusk"
+                                                    class="text-muted">Dusk</a>, <a
                                                     href="https://laravel.com/docs/broadcasting"
-                                                    class="text-muted">Echo</a>, <a
-                                                    href="https://laravel.com/docs/horizon"
-                                                    class="text-muted">Horizon</a>, <a
-                                                    href="https://laravel.com/docs/sanctum"
-                                                    class="text-muted">Sanctum</a>, <a
-                                                    href="https://laravel.com/docs/telescope"
+                                                    class="text-muted">Echo</a>,
+                                                <a href="https://laravel.com/docs/horizon" class="text-muted">Horizon</a>,
+                                                <a href="https://laravel.com/docs/sanctum" class="text-muted">Sanctum</a>,
+                                                <a href="https://laravel.com/docs/telescope"
                                                     class="text-muted">Telescope</a>, and more.
                                             </p>
                                         </div>
@@ -211,6 +187,4 @@
                 </div>
             </div>
         </div>
-    </body>
-
-    </html>
+    @endsection

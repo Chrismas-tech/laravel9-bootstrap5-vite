@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('admin.layouts.base-admin')
 @section('title')
     Profile
 @endsection

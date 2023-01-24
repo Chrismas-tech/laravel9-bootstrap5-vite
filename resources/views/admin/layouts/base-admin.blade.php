@@ -18,9 +18,9 @@
     @livewireStyles
 </head>
 
-<body class="font-sans antialiased bg-light">
-    @livewire('navigation-menu')
-    @include('layouts.header')
+<body class="bg-light">
+    @include('admin.layouts.navigation-menu')
+    @include('admin.layouts.header')
     <!-- Page Content -->
     <main class="container my-5">
         @yield('content')
