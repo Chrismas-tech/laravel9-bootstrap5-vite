@@ -13,5 +13,5 @@
 - npm install && npm run dev
 
 ### 3. Start your local server : 
-- php artisan serve -d
+- php artisan serve
 - open : http://127.0.0.1:8000
