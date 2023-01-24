@@ -1,6 +1,6 @@
 # Laravel 9 Preconfigured with Jetstream, Bootstrap5, Vite and Laravel Actions
   
-# Open terminal tab in www folder, copy and paste the following commands :
+# Open a terminal tab in www folder, copy and paste the following commands :
 
 - git clone https://github.com/Chrismas-tech/laravel9-bootstrap5-vite.git
 - cd laravel9-bootstrap5-vite
