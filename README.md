@@ -10,8 +10,9 @@
 - copy .env.example .env
 - php artisan key:generate
 - php artisan migrate --force
+- php artisan serve -d
 - npm install && npm run dev
 
 # Start your local server : 
 
-- php artisan serve
+Open http://127.0.0.1:8000
