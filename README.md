@@ -1,5 +1,7 @@
 # Laravel 9 Preconfigured with Jetstream, Bootstrap5, Vite and Laravel Actions
-  
+
+# Start your SQL Server
+
 # Open a terminal tab in www folder, copy and paste the following commands :
 
 - git clone https://github.com/Chrismas-tech/laravel9-bootstrap5-vite.git
@@ -7,7 +9,9 @@
 - composer install
 - copy .env.example .env
 - php artisan key:generate
+- php artisan migrate
 - npm install && npm run dev
 
 # Start your local server : 
+
 - php artisan serve
