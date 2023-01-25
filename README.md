@@ -1,4 +1,4 @@
-# Laravel 9 Preconfigured with Jetstream, Bootstrap5, Vite and Laravel Actions
+# Laravel 9 Preconfigured with Jetstrap (Jetstream with Bootstrap5 and Livewire), Bootstrap5, Sass, Vite and Laravel Actions installed
 
 ### 1. Start your SQL Server
 
@@ -15,3 +15,7 @@
 ### 3. Start your local server : 
 - php artisan serve
 - open : http://127.0.0.1:8000
+
+#### Source Links :
+Jetstrap : https://github.com/nascent-africa/jetstrap
+Laravel Actions : https://laravelactions.com/
