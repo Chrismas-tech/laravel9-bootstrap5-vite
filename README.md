@@ -17,5 +17,5 @@
 - open : http://127.0.0.1:8000
 
 #### Source Links :
-Jetstrap : https://github.com/nascent-africa/jetstrap
-Laravel Actions : https://laravelactions.com/
+- Jetstrap : https://github.com/nascent-africa/jetstrap
+- Laravel Actions : https://laravelactions.com/
