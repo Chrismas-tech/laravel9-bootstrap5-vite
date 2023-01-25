@@ -2,7 +2,7 @@
 
 ### 1. Start your SQL Server
 
-### 2. Open a terminal tab www folder, paste the following commands :
+### 2. Open a terminal to www/ folder, paste the following commands :
 
 - git clone https://github.com/Chrismas-tech/laravel9-bootstrap5-vite.git
 - cd laravel9-bootstrap5-vite
