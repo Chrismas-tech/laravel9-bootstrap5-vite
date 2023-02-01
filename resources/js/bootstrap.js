@@ -8,7 +8,7 @@ window._ = _;
  */
 import '@popperjs/core'
 
-import * as bootstrap from 'bootstrap'
+import * as bootstrap from 'bootstrap';
 window.bootstrap = bootstrap
 
 import axios from 'axios';
