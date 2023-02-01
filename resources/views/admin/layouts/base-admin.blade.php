@@ -42,7 +42,7 @@
     <!-- Page Content -->
 
     <!-- Fixed Plugin -->
-    @include('admin.layouts.fixed-plugin')
+    {{-- @include('admin.layouts.fixed-plugin') --}}
     <!-- Fixed Plugin -->
 
     @stack('modals')
