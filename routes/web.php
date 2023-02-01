@@ -27,11 +27,8 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    /*  Route::get('/customer/change-password', [CustomerAreaController::class, 'changePassword'])->name('customer.change-password'); */
-});
-
-/* Admin Routes */
-Route::prefix('admin')->group(function () {
-    Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
-    Route::get('/profile', [AdminController::class, 'profile'])->name('admin.profile');
+    Route::prefix('admin')->group(function () {
+        Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+        Route::get('/profile', [AdminController::class, 'profile'])->name('admin.profile');
+    });
 });
