@@ -1,4 +1,4 @@
-@extends('website.layouts.base-guest')
+@extends('website.layouts.base-website')
 @section('title')
     Home
 @endsection
